@@ -22,21 +22,21 @@ git remote add upstream https://github.com/aazirani/flutter_boilerplate.git
 
 ### Prerequisites
 
-- [Flutter](https://flutter.dev/docs/get-started/install) 3.10 or later
-- [Dart](https://dart.dev/get-dart) 3.0 or later
+- [Flutter](https://flutter.dev/docs/get-started/install) 3.47 or later
+- [Dart](https://dart.dev/get-dart) 3.13 or later
 - A code editor with Dart/Flutter support (VS Code or Android Studio recommended)
 
 ### Setup
 
 ```bash
 flutter pub get
-dart run build_runner build --delete-conflicting-outputs
+dart run build_runner build
 ```
 
 After making changes to Riverpod providers, drift tables, or i18n delegates, re-run the build runner:
 
 ```bash
-dart run build_runner build --delete-conflicting-outputs
+dart run build_runner build
 ```
 
 ## Code Style

@@ -26,6 +26,7 @@ windows/flutter/generated_plugins.cmake
 
 # Generated code
 *.g.dart
+*.drift.dart
 *.gr.dart
 *.freezed.dart
 *.mocks.dart

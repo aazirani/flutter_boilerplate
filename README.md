@@ -1,7 +1,7 @@
 # Flutter Boilerplate
 
-[![Flutter](https://img.shields.io/badge/Flutter-3.10+-02569B?logo=flutter)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-3.10+-0175C2?logo=dart)](https://dart.dev)
+[![Flutter](https://img.shields.io/badge/Flutter-3.47+-02569B?logo=flutter)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.13+-0175C2?logo=dart)](https://dart.dev)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/aazirani/flutter_boilerplate/actions/workflows/flutter-ci.yml/badge.svg)](https://github.com/aazirani/flutter_boilerplate/actions/workflows/flutter-ci.yml)
 
@@ -59,8 +59,8 @@ A production-ready Flutter application boilerplate with Clean Architecture, Rive
 
 ### Prerequisites
 
-- [Flutter](https://flutter.dev/docs/get-started/install) 3.10 or later
-- [Dart](https://dart.dev/get-dart) 3.10 or later
+- [Flutter](https://flutter.dev/docs/get-started/install) 3.47 or later
+- [Dart](https://dart.dev/get-dart) 3.13 or later
 - Android Studio / Xcode (for platform-specific builds)
 
 ### Setup
@@ -74,7 +74,7 @@ cd flutter_boilerplate
 flutter pub get
 
 # Generate code (Riverpod providers, drift DAOs, i18n delegates)
-dart run build_runner build --delete-conflicting-outputs
+dart run build_runner build
 
 # Run on a connected device or emulator
 flutter run
@@ -128,8 +128,8 @@ RTL layout is automatically applied based on the selected locale, with proper te
 | Command                                                | Description                         |
 |--------------------------------------------------------|-------------------------------------|
 | `flutter pub get`                                      | Install dependencies                |
-| `dart run build_runner build --delete-conflicting-outputs` | Generate code (providers, DAOs, i18n) |
-| `dart run build_runner watch --delete-conflicting-outputs` | Watch and regenerate on changes   |
+| `dart run build_runner build`                          | Generate code (providers, DAOs, i18n) |
+| `dart run build_runner watch`                          | Watch and regenerate on changes     |
 | `flutter analyze`                                      | Run static analysis                 |
 | `flutter test`                                         | Run unit and widget tests           |
 | `dart format lib/ test/`                              | Format source code                  |

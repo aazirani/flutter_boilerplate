@@ -57,10 +57,10 @@ class EmptyState extends StatelessWidget {
   const EmptyState._fromType({
     super.key,
     required this.icon,
-    required EmptyStateType type,
-    String? customTitle,
-    String? customDescription,
-    String? customActionLabel,
+    required this._type,
+    this._customTitle,
+    this._customDescription,
+    this._customActionLabel,
     this.onAction,
     this.secondaryActionLabel,
     this.onSecondaryAction,
@@ -69,11 +69,7 @@ class EmptyState extends StatelessWidget {
     required this.iconColor,
   }) : title = '', // Placeholder, resolved in build
        description = null, // Placeholder, resolved in build
-       actionLabel = null, // Placeholder, resolved in build
-       _type = type,
-       _customTitle = customTitle,
-       _customDescription = customDescription,
-       _customActionLabel = customActionLabel;
+       actionLabel = null; // Placeholder, resolved in build
 
   /// Creates an empty state from a predefined type.
   factory EmptyState.fromType({
