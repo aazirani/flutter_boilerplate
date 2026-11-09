@@ -19,5 +19,4 @@ class ThemeController extends _$ThemeController {
 }
 
 @Riverpod(keepAlive: true)
-ThemeMode currentThemeMode(CurrentThemeModeRef ref) =>
-    ref.watch(themeControllerProvider);
+ThemeMode currentThemeMode(Ref ref) => ref.watch(themeControllerProvider);

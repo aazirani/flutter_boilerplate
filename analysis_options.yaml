@@ -19,4 +19,12 @@ analyzer:
     library_private_types_in_public_api: ignore
   exclude:
     - '**/*.g.dart'
+    - '**/*.drift.dart'
     - '**/*.freezed.dart'
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**

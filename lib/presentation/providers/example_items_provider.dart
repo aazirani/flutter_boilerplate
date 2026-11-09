@@ -9,7 +9,7 @@ import 'package:flutter_boilerplate/data/local/database/app_database.dart';
 part 'example_items_provider.g.dart';
 
 @riverpod
-Stream<List<ExampleItem>> exampleItems(ExampleItemsRef ref) {
+Stream<List<ExampleItem>> exampleItems(Ref ref) {
   final dao = ServiceLocator.getIt<ExampleDao>();
   return dao.watchAllItems();
 }

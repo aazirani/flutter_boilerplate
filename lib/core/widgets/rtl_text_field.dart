@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../utils/text_direction.dart';
 
 /// A TextField that automatically adjusts text alignment based on content.
